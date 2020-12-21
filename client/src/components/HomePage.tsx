@@ -27,7 +27,7 @@ const HomePage = () => {
 								every great <span>product</span><br/>needs a stunning name.
 							</div>
 							<div className="desc-text">
-								give your new startups a name to be remembered - receive dropboxes of original, available, and defining domains weekly.
+								launch your new startups with a name to be remembered - receive dropboxes of original, available, and defining domains weekly.
 							</div>
 						</div>
 

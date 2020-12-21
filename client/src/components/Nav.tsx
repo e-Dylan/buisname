@@ -6,7 +6,7 @@ const Nav = () => {
 		<div className="nav-container">
 			<div className="nav-items">
 				<div className="nav-left">
-					<a className="nav-logo"><span className="logo-1">buis</span><span className="logo-2">name</span></a>
+					<a className="nav-logo"><span className="logo-1">launch</span><span className="logo-2">name</span></a>
 				</div>
 				<div className="nav-right">
 					<a className="nav-link">Info</a>
