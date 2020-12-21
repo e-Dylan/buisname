@@ -10,6 +10,11 @@
 	height: 100%;
 	margin-top: 2rem;
 
+	#bg {
+		animation: bg 3s ease-in-out infinite alternate;
+		transform-origin: center;
+	}
+
 	#rocket {
 		animation: rocket 2s ease-in-out infinite alternate;
 		transform-origin: center;
@@ -51,11 +56,19 @@
 	}
 }
 
+@keyframes bg {
+	from {
+		transform: rotateX(-10deg) rotateZ(-2deg) translateY(0px);
+	} to {
+		transform: rotateX(10deg) rotateZ(2deg) translateY(-20px);
+	}
+}
+
 @keyframes rocket {
 	from {
-		transform: rotateX(0deg) translateY(0px) rotateZ(-5deg);;
+		transform: rotateX(0deg) translateY(0px) rotateZ(-5deg);
 	} to {
-		transform: rotateX(20deg) translateY(100px) rotateZ(-5deg);;
+		transform: rotateX(20deg) translateY(100px) rotateZ(-5deg);
 	}
 }
 @keyframes ball1 {
