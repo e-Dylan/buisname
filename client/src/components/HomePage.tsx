@@ -1,20 +1,36 @@
 import React from "react";
+import RocketAnimation from "./RocketAnimation";
 import './styles/HomePage.scss';
+
+import homeBackground from '../resources/homepage/star-animation.gif';
+
+/**
+ * FRONT PAGE:
+ * INCLUDE MORE EXPLANATION ON DATA RECEIVED:
+ * - show price,
+ * - show popularity,
+ * - show when/if last owned, how likely it is to be taken soon
+ * - always find domains when they are available, automatically
+ */
 
 const HomePage = () => {
 	return (
-		<section className="homepage">
+		<div className="homepage">
+			<div id="home-background">
+				{/* <img src={homeBackground} /> */}
+			</div>
 			<div className="home-content">
 				<div className="center-container">
-					<div className="text-div">
-						<div className="title-text">
-							Every great product needs a stunning name.
+					<div className="main-content">
+						<div className="text-div">
+							<div className="title-text">
+								every great <span>product</span><br/>needs a stunning name.
+							</div>
+							<div className="desc-text">
+								give your new startups a name to be remembered - receive dropboxes of original, available, and defining domains weekly.
+							</div>
 						</div>
-						<div className="desc-text">
-							Give your new startups a name to be remembered - receive dropboxes of original domain names weekly.
-						</div>
-					</div>
-					<div className="form-div">
+
 						<div className="form-container">
 							<form className="signup-form">
 								<span className="form-title">Receive startup names</span>
@@ -25,7 +41,9 @@ const HomePage = () => {
 								</div>
 							</form>
 						</div>
-						
+					</div>
+					<div className="animation-col">
+						<RocketAnimation />
 					</div>
 				</div>
 			</div>
@@ -36,7 +54,7 @@ const HomePage = () => {
 					</form>
 				</div> */}
 
-		</section>
+		</div>
 		
 	);
 }

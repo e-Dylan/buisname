@@ -1,8 +1,8 @@
 .nav-container {
-	position: absolute;
+	// position: absolute;
 	width: 100vw;
-	height: auto;
-	background-color: rgba(50, 50, 50, 0.2);
+	height: 6vh;
+	background-color: rgb(50, 50, 50);
 	border-bottom: 2px solid rgb(235, 69, 110);
 	color: white;
 	display: flex;
@@ -17,24 +17,45 @@
 		justify-content: space-between;
 		padding: 20px;
 
+		.nav-link {
+			cursor: pointer;
+			transition: 100ms all ease-in-out;
+			&:hover {
+				background: -webkit-linear-gradient(rgb(216, 96, 126), #ec1313);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+
 		.nav-left {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
 			a {
-				font-size: 17pt;
-				margin: 1.2rem;
+				font-size: 20pt;
+				margin: 0 1.2rem;
 			}
 			.logo-1 {
 				color: white;
 			}
 			.logo-2 {
-				color: rgb(235, 69, 110);
+				background: -webkit-linear-gradient(rgb(250, 70, 115), #ee2652);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
 			}
 		}
 
 		.nav-right {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			margin-right: 5%;
 			a {
-				font-size: 14pt;
-				font-weight: 400;
-				margin: 1.2rem;
+				font-size: 13pt;
+				font-weight: lighter;
+				margin: 0 1.2rem;
 			}
 		}
 	}

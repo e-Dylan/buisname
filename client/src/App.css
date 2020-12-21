@@ -1,4 +1,28 @@
-.html, #root, #body, body, html {
-	padding: 0;
-	margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+	font-family: "Rubik", sans-serif;
+}
+
+body, html, #root, .app, .container {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.container-center {
+	margin: 0 auto;
+	max-width: 1600px;
+	width: 100%;
+	padding: 100px 100px 130px 100px;
 }

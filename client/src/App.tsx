@@ -5,12 +5,19 @@ import './App.css';
 // Components
 import Nav from './components/Nav';
 import HomePage from './components/HomePage';
+import AdvertisingSection from './components/AdvertisingSection';
 
 const App = () => {
 	return (
 		<div className="app">
 			<Nav />
-			<HomePage />
+			<section className="homepage-section">
+				<HomePage />
+			</section>
+			<section className="advertising-section">
+				<AdvertisingSection />
+			</section>
+			
 		</div>
 	);
 }
