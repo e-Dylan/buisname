@@ -14,9 +14,9 @@ const App = () => {
 			<section className="homepage-section">
 				<HomePage />
 			</section>
-			<section className="advertising-section">
-				{/* <AdvertisingSection /> */}
-			</section>
+			{/* <section className="advertising-section">
+				<AdvertisingSection />
+			</section> */}
 			
 		</div>
 	);
